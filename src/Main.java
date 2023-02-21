@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
         public static void task1() {
             byte age = 17;
@@ -19,5 +20,13 @@ public class Main {
                 } else {
                     System.out.println("На улице " + temp + " градусов, нужно надеть шапку");
                 }
+        }
+        public static void task3() {
+            short speed = 60;
+            if (speed > 60) {
+                System.out.println("Если скорость " + speed + ", то придётся заплатить штраф");
+            } else {
+                System.out.println("Если скорость " + speed + ", то можно ездить спокойно");
+            }
         }
 }
