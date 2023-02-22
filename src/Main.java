@@ -62,20 +62,33 @@ public class Main {
             }
         }
         public static void task6() {
+            int peopleAll = 102;
+            int sit = 60;
+            int std = peopleAll - sit;
+            int people = 43;
+            if (people < peopleAll && people < sit) {
+            System.out.println("В вагоне осталось " + (sit - people) + " сидячих мест и " + std + " стоячих места.");
+        }
+            if (people >= sit && people <= peopleAll) {
+                System.out.println("В вагоне осталось 0 сидячих мест и " + (std - (people - sit)) + " стоячих места.");
+            }
+            if (people >= peopleAll) {
+                System.out.println("В вагоне не осталось мест, вагон забит");
+            }
 
         }
         public static void task7() {
-        int one = 69;
-        int two = 129;
-        int three = 89;
-        if(one > two && one > three) {
-            System.out.println(one);
+            int one = 69;
+            int two = 129;
+            int three = 89;
+            if (one > two && one > three) {
+                System.out.println(one);
             }
-        if(two > one && two > three) {
-            System.out.println(two);
+            if (two > one && two > three) {
+                System.out.println(two);
         }
-        if(three > one && three > two) {
-            System.out.println(three);
+            if (three > one && three > two) {
+                System.out.println(three);
         }
         }
 }
