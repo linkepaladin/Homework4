@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
         public static void task1() {
             byte age = 17;
@@ -27,6 +28,21 @@ public class Main {
                 System.out.println("Если скорость " + speed + ", то придётся заплатить штраф");
             } else {
                 System.out.println("Если скорость " + speed + ", то можно ездить спокойно");
+            }
+        }
+        public static void task4() {
+            byte age = 11;
+            if(age >= 2 && age <= 6) {
+                System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в детский сад");
+            }
+            if(age >= 7 && age <= 18) {
+                System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в школу");
+            }
+            if(age > 18 && age <= 24) {
+                System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в университет");
+            }
+            if(age > 24) {
+                System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить на работу");
             }
         }
 }
