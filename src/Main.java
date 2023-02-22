@@ -5,6 +5,8 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
+        task7();
     }
         public static void task1() {
             byte age = 17;
@@ -47,16 +49,33 @@ public class Main {
             }
         }
         public static void task5() {
-        byte age = 3;
-        if(age < 5) {
-            System.out.println("Если возраст ребенка равен " + age + ", то ему нельзя кататься на аттракционе");
+            byte age = 3;
+            if (age < 5) {
+                System.out.println("Если возраст ребенка равен " + age + ", то ему нельзя кататься на аттракционе");
+            }
+            if (age >= 5 && age < 14) {
+                System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе " +
+                        "в сопровождении родителей");
+            }
+            if (age >= 14) {
+                System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе");
+            }
         }
-        if(age >= 5 && age < 14) {
-            System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе " +
-                                "в сопровождении родителей");
+        public static void task6() {
+
         }
-        if(age >= 14) {
-            System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе");
+        public static void task7() {
+        int one = 69;
+        int two = 129;
+        int three = 89;
+        if(one > two && one > three) {
+            System.out.println(one);
+            }
+        if(two > one && two > three) {
+            System.out.println(two);
+        }
+        if(three > one && three > two) {
+            System.out.println(three);
         }
         }
 }
