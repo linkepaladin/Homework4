@@ -3,6 +3,7 @@ public class Main {
             task1();
             task2();
             task3();
+            task4();
         }
     public static void task1() {
         int operationSystem = 4;
@@ -50,6 +51,18 @@ public class Main {
             }
         } else {
             System.out.println("Это не високосный год");
+        }
+    }
+    public static void task4() {
+        int deliveryDistance = 95;
+        if (deliveryDistance <= 20) {
+            System.out.println("Потребуется 1 день");
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            System.out.println("Потребуется 2 дня");
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            System.out.println("Потребуется 3 дня");
+        } else {
+            System.out.println("Доставки нет");
         }
     }
 }
